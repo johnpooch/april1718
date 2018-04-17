@@ -1,0 +1,72 @@
+.box {
+    background: linear-gradient(to bottom, white, black);
+    height: 55px;   
+    width: 55px;
+    top: 0%;
+    left: 0%;
+    border: 1px solid;
+    border-radius: 100%;
+    position: absolute;
+}
+
+
+.first {
+    left: 0%;
+    animation: movingbox 10s infinite;text-align: center;
+}
+
+.second {
+    left: 10%;
+    animation: movingbox 8s infinite;
+}
+
+.third {
+    left: 20%;
+    animation: movingbox 7s infinite;
+}
+
+.fourth {
+    left: 30%;
+    animation: movingbox 6.5s infinite;
+}
+
+.fifth {
+    left: 40%;
+    animation: movingbox 6.25s infinite;
+}
+
+.sixth {
+    left: 50%;
+    animation: movingbox 6.5s infinite;
+}
+
+.seventh {
+    left: 60%;
+    animation: movingbox 7s infinite;
+}
+.eighth {
+    left: 70%;
+    animation: movingbox 8s infinite;
+}
+
+.ninth {
+    left: 80%;
+    animation: movingbox 10s infinite;
+    
+}
+
+span {
+    display: block;
+    font-size: 40px;
+    color: red;
+    transform: rotate(90deg);
+    font-family: sans-serif;
+}
+
+@keyframes movingbox {
+    0% { top:10%;  transform: scale(1, 0.9)}
+
+    50% { top:50%;  transform: scale(1, 0.9)}
+
+    100% { top: 10%;  transform: scale(1, 0.9)}
+}

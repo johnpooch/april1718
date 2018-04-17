@@ -24,6 +24,7 @@ nav ul li {
 /* a pseudo class which happens when mouse hovers over links */
 nav ul li a:hover {
     color: white;
+    transition: color 0.5s ease;
 }
 
 /* nav links */
