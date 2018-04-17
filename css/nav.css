@@ -1,0 +1,47 @@
+body {
+    background-color: #292e37;
+}
+
+nav{
+    font-size:0;
+}
+
+/* nav bar */
+nav ul {
+    list-style-type: none;
+    border-bottom: 1px solid #444;
+    background-color: #1d2026;
+    text-align: center;
+}
+
+/* nav elements */
+nav ul li {
+    font-size: 20px;
+    padding: 10px 20px;
+    display: block;
+}
+
+/* a pseudo class which happens when mouse hovers over links */
+nav ul li a:hover {
+    color: white;
+}
+
+/* nav links */
+nav ul li a {
+    color: #888;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.currentPage {
+    color: #aa87b7;
+}
+
+@media (min-width: 768px) {
+    nav ul {
+        text-align: right;
+    }
+    nav ul li {
+        display: inline-block;
+    }
+}

@@ -1,0 +1,50 @@
+.container {
+    text-align: center;
+    font-size: 0;
+    padding: 0;
+}
+
+.box {
+    font-size: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+    
+    /* this makes the text not mess with the position of the box */
+    vertical-align: top;
+    font-size: 1.2rem;
+
+    /*to appear next to eachother rather than on top: */
+    display: inline-block; 
+    height: 98vh;
+    width: 33.333%;
+    
+    /* default color (desktop) */
+    background-color: violet;
+}
+
+/* this is an if statement */
+/* we put the media query at the bottom because we want to apply it to what has already been carried out */
+/*if tablet*/
+@media (max-width: 768px) {
+    .box {
+        width: 50%;
+        background-color: red;
+    }
+    .desktop {
+        display: none;
+    }
+}
+
+/*if phone*/
+@media (max-width:414px) {
+    .box{
+        width: 100%;
+        background-color: blue;
+    }
+    .tablet {
+        display: none;
+    }
+}
+
+
+
